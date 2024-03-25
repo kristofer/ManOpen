@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -939,6 +939,7 @@
 				DEVELOPMENT_TEAM = K39VF43BJL;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -955,6 +956,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -966,6 +968,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = cat2rtf;
 				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
@@ -975,6 +978,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = cat2rtf;
 				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
@@ -984,6 +988,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = cat2html;
 				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
@@ -993,6 +998,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = cat2html;
 				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
@@ -1002,6 +1008,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = openman;
 			};
 			name = Development;
@@ -1010,6 +1017,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				PRODUCT_NAME = openman;
 			};
 			name = Deployment;
@@ -1021,7 +1029,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = "openman/openmanTests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.openmanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1034,7 +1046,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = "openman/openmanTests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.openmanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1048,7 +1064,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ManOpenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManOpen.app/Contents/MacOS/ManOpen";
@@ -1063,7 +1083,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ManOpenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManOpen.app/Contents/MacOS/ManOpen";

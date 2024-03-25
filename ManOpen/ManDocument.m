@@ -424,7 +424,7 @@
         NSPasteboard *pb = [NSPasteboard generalPasteboard];
         NSMutableArray *types = [NSMutableArray array];
         
-        [types addObject:NSURLPboardType];
+        [types addObject:NSPasteboardTypeURL];
         if ([copyURL isFileURL])
             [types addObject:NSFilenamesPboardType];
         [types addObject:NSStringPboardType];
