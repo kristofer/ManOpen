@@ -936,7 +936,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K39VF43BJL;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
@@ -952,7 +952,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K39VF43BJL;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
